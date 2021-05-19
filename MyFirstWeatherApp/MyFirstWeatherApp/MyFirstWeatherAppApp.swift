@@ -12,7 +12,7 @@ struct MyFirstWeatherAppApp: App {
     var viewModel = WeatherViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView(viewModel: <#T##WeatherViewModel#>)
+            ContentView(viewModel: viewModel)
         }
     }
 }
