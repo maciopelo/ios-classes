@@ -15,6 +15,8 @@
 		06554A642643BEB30094BEB3 /* MyFirstWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06554A632643BEB30094BEB3 /* MyFirstWeatherAppUITests.swift */; };
 		06554A752643C9B00094BEB3 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06554A742643C9B00094BEB3 /* WeatherModel.swift */; };
 		06554A7A2643CBFD0094BEB3 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06554A792643CBFD0094BEB3 /* WeatherViewModel.swift */; };
+		06624E3A266FC80C0052351A /* MetaWeatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06624E39266FC80C0052351A /* MetaWeatherFetcher.swift */; };
+		06624E40266FC93B0052351A /* MetaWeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06624E3F266FC93B0052351A /* MetaWeatherResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		06554A652643BEB30094BEB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06554A742643C9B00094BEB3 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		06554A792643CBFD0094BEB3 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		06624E39266FC80C0052351A /* MetaWeatherFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaWeatherFetcher.swift; sourceTree = "<group>"; };
+		06624E3F266FC93B0052351A /* MetaWeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaWeatherResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +107,10 @@
 				06554A742643C9B00094BEB3 /* WeatherModel.swift */,
 				06554A462643BEAF0094BEB3 /* MyFirstWeatherAppApp.swift */,
 				06554A482643BEAF0094BEB3 /* ContentView.swift */,
-				06554A4A2643BEB20094BEB3 /* Assets.xcassets */,
 				06554A4F2643BEB20094BEB3 /* Info.plist */,
+				06624E39266FC80C0052351A /* MetaWeatherFetcher.swift */,
+				06624E3F266FC93B0052351A /* MetaWeatherResponse.swift */,
+				06554A4A2643BEB20094BEB3 /* Assets.xcassets */,
 				06554A4C2643BEB20094BEB3 /* Preview Content */,
 			);
 			path = MyFirstWeatherApp;
@@ -267,6 +273,8 @@
 			files = (
 				06554A492643BEAF0094BEB3 /* ContentView.swift in Sources */,
 				06554A7A2643CBFD0094BEB3 /* WeatherViewModel.swift in Sources */,
+				06624E40266FC93B0052351A /* MetaWeatherResponse.swift in Sources */,
+				06624E3A266FC80C0052351A /* MetaWeatherFetcher.swift in Sources */,
 				06554A752643C9B00094BEB3 /* WeatherModel.swift in Sources */,
 				06554A472643BEAF0094BEB3 /* MyFirstWeatherAppApp.swift in Sources */,
 			);
