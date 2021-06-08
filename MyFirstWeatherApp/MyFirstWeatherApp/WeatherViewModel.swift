@@ -59,6 +59,17 @@ class WeatherViewModel: NSObject, ObservableObject, CLLocationManagerDelegate{
         print("current location \(String(describing: currentLocation))")
     }
     
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
+        currentLocation = locations.last
+        let geocoder = CLGeocoder()
+        if let location = currentLocation{
+            geocoder.reverseGeocodeLocation(location){
+                placemarks, error in
+                self.currentLocName = placemarks![0].locality!
+            }
+            
+        }
+    }
     func refresh(record: WeatherModel.WeatherRecord){
         // objectWillChange.send()
         // model.refresh(record: record)
