@@ -43,7 +43,8 @@ struct WeatherModel{
         
     }
     
-    /*mutating func refresh(record: WeatherRecord){
+    /* Previous refresh method - no longer useful 
+    mutating func refresh(record: WeatherRecord){
         let index = records.firstIndex(where: {$0.id == record.id})
         
         records[index!].temp = Double.random(in:-10.0...30.0)
@@ -61,8 +62,7 @@ struct WeatherModel{
             if rec.woeID == woeID{
                 index = ind
             }
-        }
-        print("index: \(index)")
+
         records[index].latitutde = Double(response.lattLong.components(separatedBy: ",")[0].trimmingCharacters(in: .whitespaces))!
         print(response.lattLong.components(separatedBy: ","))
         records[index].longitude = Double(response.lattLong.components(separatedBy: ",")[1].trimmingCharacters(in: .whitespaces))!
@@ -72,6 +72,5 @@ struct WeatherModel{
         records[index].humidity = Double(response.consolidatedWeather[0].humidity)
         records[index].windSpeed = response.consolidatedWeather[0].windSpeed
         records[index].windDirection = response.consolidatedWeather[0].windDirection
-        print("refreshProperly of record: \(records[index])")
     }
 }
